@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hjx.system.dao.ProductMapper">
+	<resultMap id="BaseResultMap" type="com.hjx.system.model.Product">
+		<result column="product_name" property="productName" jdbcType="VARCHAR" />
+		<result column="product_type" property="productTypeId" jdbcType="INTEGER" />
+		<result column="product_model" property="productModel" jdbcType="VARCHAR" />
+		<result column="product_fuction" property="productFuction" jdbcType="INTEGER" />
+		<result column="product_id" property="productId" jdbcType="INTEGER" />
+	</resultMap>
+
+
+
+	<resultMap id="BasePageMap" type="com.hjx.system.model.ProductPage">
+		<result column="product_name" property="productName" jdbcType="VARCHAR" />
+		<result column="product_type" property="productType" jdbcType="VARCHAR" />
+		<result column="product_model" property="productModel" jdbcType="VARCHAR" />
+		<result column="product_fuction" property="productFuction" jdbcType="INTEGER" />
+		<result column="product_id" property="productId" jdbcType="INTEGER" />
+	</resultMap>
+
+	<sql id="Base_Column_List">
+		product_name,
+		product_type,
+		product_model,
+		product_type_id,
+		product_fuction,
+		product_id
+	</sql>
+	<sql id="Example_Where_Clause">
+		<where>
+				<if test="productName != null and productName !=''">
+					and product_name = #{productName,jdbcType=VARCHAR}
+				</if>
+				<if test="productModel != null and productModel !=''">
+					and product_model = #{productModel,jdbcType=VARCHAR}
+				</if>
+				<if test="productFuction != null">
+					and product_fuction = #{productFuction,jdbcType=INTEGER}
+				</if>
+				<if test="productId != null">
+					and product_id = #{productId,jdbcType=INTEGER}
+				</if>
+    </where>
+	</sql>
+
+
+	<insert id="saveProduct" parameterType="com.hjx.system.model.Product">
+		insert
+		into system_product (product_name,
+		product_type_id,
+		product_model,
+		product_fuction)
+		values (#{p.productName},#{p.productTypeId},#{p.productModel},#{p.productFuction})
+        values
+	</insert>
+
+	<update id="updateProduct" parameterType="com.hjx.system.model.Product">
+		update system_product
+		set
+			product_name = #{p.productName,jdbcType=VARCHAR},
+			product_type_id = #{p.productTypeId,jdbcType=INTEGER},
+			product_model = #{p.productModel,jdbcType=VARCHAR},
+			product_fuction = #{p.productFuction,jdbcType=VARCHAR},
+			where product_id = #{p.productId,jdbcType=INTEGER}
+	</update>
+
+	<select id="findTByPage" parameterType="com.hjx.system.model.ProductPage" resultMap="BasePageMap">
+		SELECT
+		t1.product_id,
+		t1.product_name,
+		t2.product_type,
+		t1.product_model,
+		t1.product_fuction
+		FROM
+		system_product as t1
+		LEFT JOIN
+		system_product_type as t2
+		on
+		t1.product_type_id = t2.id
+		<include refid="Example_Where_Clause"/>
+		ORDER BY
+		product_id DESC
+
+	</select>
+	
+	<delete id="deleteProduct" parameterType="java.lang.Integer">
+		delete from system_product where id
+		<foreach collection="ids" item="id"
+				 open="(" close=")" index="index" separator=",">
+			#{id}
+		</foreach>
+
+	</delete>
+
+	
+</mapper>

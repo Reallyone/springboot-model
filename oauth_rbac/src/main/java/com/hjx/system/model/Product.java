@@ -1,0 +1,43 @@
+/**
+ * 版权声明： 版权所有 违者必究 2020
+*/
+package com.hjx.system.model;
+
+import com.hjx.common.model.Page;
+import io.swagger.annotations.ApiModel;
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+import java.io.Serializable;
+
+/**
+ * <p>Table: system_product - </p>
+ *
+ * @author gaog
+ * @since 2020-05-14 02:26:05
+ */
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@ApiModel(value = "product", description = "产品")
+public class Product  {
+
+    /** product_name -  */
+    private String productName;
+
+    /** product_type -  */
+    private Integer productTypeId;
+
+    /** product_model -  */
+    private String productModel;
+
+    /** product_fuction -  */
+    private Integer productFuction;
+
+    /** product_id -  */
+    private Integer productId;
+
+
+
+}
