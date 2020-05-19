@@ -1,0 +1,60 @@
+server:
+  port: 8082
+
+
+spring:
+  http:
+    encoding:
+      charset: utf-8
+  application:
+    name: oauth_rebac_redis_server
+  datasource:
+    url: jdbc:mysql://182.92.235.178:3306/xnpool_mine?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8
+    username: root
+    password: mine#mysql&nm45
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  #redis
+  redis:
+    host: 127.0.0.1
+    port: 6379
+    password:
+    database: 0
+    jedis:
+      pool:
+        max-active: 8
+        max-wait: 1000
+        max-idle: 8
+        min-idle: 0
+
+#eureka
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    health-check-url-path: /actuator/health
+    prefer-ip-address: true
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://127.0.0.1:8080/eureka/
+
+#mybatis plus
+mybatis-plus:
+  mapper-locations: classpath:/mapper/*Mapper.xml
+    typeAliasesPackage: com.xn.mine.model
+    global-config:
+      sql-parser-cache: true
+      db-config:
+        id-type: auto
+
+hjx:
+  tenant:
+    enable: true
+    ignoreTables:
+      - sys_role_user
+      - sys_role_menu
+      - sys_tenant
+      - oauth_client_details
+      - sys_role_mine
+      - sys_menu_permission
+      - t_operation
+    ignoreSqls:

@@ -9,6 +9,8 @@
     <version>1.0-SNAPSHOT</version>
 
 
+
+
     <!--父模块-->
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -21,8 +23,26 @@
     <modules>
         <module>eureka_center</module>
         <module>oauth_rbac</module>
+        <module>oauth_rbac_redis</module>
     </modules>
 
+
+    <!-- 设定主仓库，按设定顺序进行查找。 -->
+    <repositories>
+        <repository>
+            <id>repos</id>
+            <name>Repository</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+        </repository>
+    </repositories>
+    <!-- 设定插件仓库 -->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>repos</id>
+            <name>Repository</name>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+        </pluginRepository>
+    </pluginRepositories>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -30,10 +50,26 @@
         <!--版本管理-->
         <junit.version>4.12</junit.version>
         <spring-cloud.version>Finchley.RELEASE</spring-cloud.version>
+        <lombok-version>1.18.2</lombok-version>
+        <hutool.version>5.0.5</hutool.version>
     </properties>
 
     <!--依赖包管理-->
     <dependencies>
+
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok-version}</version>
+        </dependency>
+
+
+        <!-- hutool java工具类库  -->
+        <dependency>
+            <groupId>cn.hutool</groupId>
+            <artifactId>hutool-all</artifactId>
+            <version>${hutool.version}</version>
+        </dependency>
 
         <dependency>
             <groupId>org.springframework.boot</groupId>

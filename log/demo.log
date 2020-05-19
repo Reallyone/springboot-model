@@ -1,1 +1,2 @@
-2020-05-18 23:10:59,029 INFO (StartupInfoLogger.java:59)- Started Application in 3.569 seconds (JVM running for 4.011)
+2020-05-19 16:36:41,049 INFO (SpringApplication.java:675)- No active profile set, falling back to default profiles: default
+2020-05-19 16:36:47,059 INFO (StartupInfoLogger.java:59)- Started Application in 6.954 seconds (JVM running for 7.433)
