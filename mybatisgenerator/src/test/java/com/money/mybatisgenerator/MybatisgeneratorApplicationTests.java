@@ -1,10 +1,10 @@
-package com.hjx.oauth_rbac_redis;
+package com.money.mybatisgenerator;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class OauthRbacRedisApplicationTests {
+class MybatisgeneratorApplicationTests {
 
     @Test
     void contextLoads() {

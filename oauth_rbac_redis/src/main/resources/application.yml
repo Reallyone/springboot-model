@@ -9,9 +9,9 @@ spring:
   application:
     name: oauth_rebac_redis_server
   datasource:
-    url: jdbc:mysql://182.92.235.178:3306/xnpool_mine?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8
+    url: jdbc:mysql://127.0.0.1:3306/spring_study_user?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&useSSL=false&zeroDateTimeBehavior=convertToNull&serverTimezone=GMT%2B8
     username: root
-    password: mine#mysql&nm45
+    password: root
     driver-class-name: com.mysql.cj.jdbc.Driver
   #redis
   redis:
