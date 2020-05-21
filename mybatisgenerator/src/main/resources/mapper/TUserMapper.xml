@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.money.mybatisgenerator.mbg.mapper.TUserMapper">
-  <resultMap id="BaseResultMap" type="com.money.mybatisgenerator.mbg.model.TUser">
+<mapper namespace="com.hjx.mybatisgenerator.mbg.mapper.TUserMapper">
+  <resultMap id="BaseResultMap" type="com.hjx.mybatisgenerator.mbg.model.TUser">
     <id column="id" jdbcType="BIGINT" property="id" />
     <result column="username" jdbcType="VARCHAR" property="username" />
     <result column="nickname" jdbcType="VARCHAR" property="nickname" />
@@ -19,82 +19,10 @@
     <result column="tenant_id" jdbcType="VARCHAR" property="tenantId" />
     <result column="address" jdbcType="VARCHAR" property="address" />
   </resultMap>
-  <sql id="Example_Where_Clause">
-    <where>
-      <foreach collection="oredCriteria" item="criteria" separator="or">
-        <if test="criteria.valid">
-          <trim prefix="(" prefixOverrides="and" suffix=")">
-            <foreach collection="criteria.criteria" item="criterion">
-              <choose>
-                <when test="criterion.noValue">
-                  and ${criterion.condition}
-                </when>
-                <when test="criterion.singleValue">
-                  and ${criterion.condition} #{criterion.value}
-                </when>
-                <when test="criterion.betweenValue">
-                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
-                </when>
-                <when test="criterion.listValue">
-                  and ${criterion.condition}
-                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
-                    #{listItem}
-                  </foreach>
-                </when>
-              </choose>
-            </foreach>
-          </trim>
-        </if>
-      </foreach>
-    </where>
-  </sql>
-  <sql id="Update_By_Example_Where_Clause">
-    <where>
-      <foreach collection="example.oredCriteria" item="criteria" separator="or">
-        <if test="criteria.valid">
-          <trim prefix="(" prefixOverrides="and" suffix=")">
-            <foreach collection="criteria.criteria" item="criterion">
-              <choose>
-                <when test="criterion.noValue">
-                  and ${criterion.condition}
-                </when>
-                <when test="criterion.singleValue">
-                  and ${criterion.condition} #{criterion.value}
-                </when>
-                <when test="criterion.betweenValue">
-                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
-                </when>
-                <when test="criterion.listValue">
-                  and ${criterion.condition}
-                  <foreach close=")" collection="criterion.value" item="listItem" open="(" separator=",">
-                    #{listItem}
-                  </foreach>
-                </when>
-              </choose>
-            </foreach>
-          </trim>
-        </if>
-      </foreach>
-    </where>
-  </sql>
   <sql id="Base_Column_List">
     id, username, nickname, password, head_img_url, mobile, sex, enabled, type, create_time, 
     update_time, company, open_id, is_del, tenant_id, address
   </sql>
-  <select id="selectByExample" parameterType="com.money.mybatisgenerator.mbg.model.TUserExample" resultMap="BaseResultMap">
-    select
-    <if test="distinct">
-      distinct
-    </if>
-    <include refid="Base_Column_List" />
-    from t_user
-    <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
-    </if>
-    <if test="orderByClause != null">
-      order by ${orderByClause}
-    </if>
-  </select>
   <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
@@ -105,13 +33,7 @@
     delete from t_user
     where id = #{id,jdbcType=BIGINT}
   </delete>
-  <delete id="deleteByExample" parameterType="com.money.mybatisgenerator.mbg.model.TUserExample">
-    delete from t_user
-    <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
-    </if>
-  </delete>
-  <insert id="insert" parameterType="com.money.mybatisgenerator.mbg.model.TUser">
+  <insert id="insert" parameterType="com.hjx.mybatisgenerator.mbg.model.TUser">
     insert into t_user (id, username, nickname, 
       password, head_img_url, mobile, 
       sex, enabled, type, create_time, 
@@ -125,7 +47,7 @@
       #{isDel,jdbcType=BIT}, #{tenantId,jdbcType=VARCHAR}, #{address,jdbcType=VARCHAR}
       )
   </insert>
-  <insert id="insertSelective" parameterType="com.money.mybatisgenerator.mbg.model.TUser">
+  <insert id="insertSelective" parameterType="com.hjx.mybatisgenerator.mbg.model.TUser">
     insert into t_user
     <trim prefix="(" suffix=")" suffixOverrides=",">
       <if test="id != null">
@@ -228,91 +150,7 @@
       </if>
     </trim>
   </insert>
-  <select id="countByExample" parameterType="com.money.mybatisgenerator.mbg.model.TUserExample" resultType="java.lang.Integer">
-    select count(*) from t_user
-    <if test="_parameter != null">
-      <include refid="Example_Where_Clause" />
-    </if>
-  </select>
-  <update id="updateByExampleSelective" parameterType="map">
-    update t_user
-    <set>
-      <if test="record.id != null">
-        id = #{record.id,jdbcType=BIGINT},
-      </if>
-      <if test="record.username != null">
-        username = #{record.username,jdbcType=VARCHAR},
-      </if>
-      <if test="record.nickname != null">
-        nickname = #{record.nickname,jdbcType=VARCHAR},
-      </if>
-      <if test="record.password != null">
-        password = #{record.password,jdbcType=VARCHAR},
-      </if>
-      <if test="record.headImgUrl != null">
-        head_img_url = #{record.headImgUrl,jdbcType=VARCHAR},
-      </if>
-      <if test="record.mobile != null">
-        mobile = #{record.mobile,jdbcType=VARCHAR},
-      </if>
-      <if test="record.sex != null">
-        sex = #{record.sex,jdbcType=BIT},
-      </if>
-      <if test="record.enabled != null">
-        enabled = #{record.enabled,jdbcType=BIT},
-      </if>
-      <if test="record.type != null">
-        type = #{record.type,jdbcType=VARCHAR},
-      </if>
-      <if test="record.createTime != null">
-        create_time = #{record.createTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="record.updateTime != null">
-        update_time = #{record.updateTime,jdbcType=TIMESTAMP},
-      </if>
-      <if test="record.company != null">
-        company = #{record.company,jdbcType=VARCHAR},
-      </if>
-      <if test="record.openId != null">
-        open_id = #{record.openId,jdbcType=VARCHAR},
-      </if>
-      <if test="record.isDel != null">
-        is_del = #{record.isDel,jdbcType=BIT},
-      </if>
-      <if test="record.tenantId != null">
-        tenant_id = #{record.tenantId,jdbcType=VARCHAR},
-      </if>
-      <if test="record.address != null">
-        address = #{record.address,jdbcType=VARCHAR},
-      </if>
-    </set>
-    <if test="_parameter != null">
-      <include refid="Update_By_Example_Where_Clause" />
-    </if>
-  </update>
-  <update id="updateByExample" parameterType="map">
-    update t_user
-    set id = #{record.id,jdbcType=BIGINT},
-      username = #{record.username,jdbcType=VARCHAR},
-      nickname = #{record.nickname,jdbcType=VARCHAR},
-      password = #{record.password,jdbcType=VARCHAR},
-      head_img_url = #{record.headImgUrl,jdbcType=VARCHAR},
-      mobile = #{record.mobile,jdbcType=VARCHAR},
-      sex = #{record.sex,jdbcType=BIT},
-      enabled = #{record.enabled,jdbcType=BIT},
-      type = #{record.type,jdbcType=VARCHAR},
-      create_time = #{record.createTime,jdbcType=TIMESTAMP},
-      update_time = #{record.updateTime,jdbcType=TIMESTAMP},
-      company = #{record.company,jdbcType=VARCHAR},
-      open_id = #{record.openId,jdbcType=VARCHAR},
-      is_del = #{record.isDel,jdbcType=BIT},
-      tenant_id = #{record.tenantId,jdbcType=VARCHAR},
-      address = #{record.address,jdbcType=VARCHAR}
-    <if test="_parameter != null">
-      <include refid="Update_By_Example_Where_Clause" />
-    </if>
-  </update>
-  <update id="updateByPrimaryKeySelective" parameterType="com.money.mybatisgenerator.mbg.model.TUser">
+  <update id="updateByPrimaryKeySelective" parameterType="com.hjx.mybatisgenerator.mbg.model.TUser">
     update t_user
     <set>
       <if test="username != null">
@@ -363,7 +201,7 @@
     </set>
     where id = #{id,jdbcType=BIGINT}
   </update>
-  <update id="updateByPrimaryKey" parameterType="com.money.mybatisgenerator.mbg.model.TUser">
+  <update id="updateByPrimaryKey" parameterType="com.hjx.mybatisgenerator.mbg.model.TUser">
     update t_user
     set username = #{username,jdbcType=VARCHAR},
       nickname = #{nickname,jdbcType=VARCHAR},

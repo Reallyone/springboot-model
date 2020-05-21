@@ -11,7 +11,7 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.money</groupId>
+    <groupId>com.hjx</groupId>
     <artifactId>mybatisgenerator</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>mybatisgenerator</name>

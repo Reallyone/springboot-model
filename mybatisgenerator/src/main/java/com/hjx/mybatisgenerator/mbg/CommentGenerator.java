@@ -1,4 +1,4 @@
-package com.money.mybatisgenerator.mbg;
+package com.hjx.mybatisgenerator.mbg;
 
 import org.mybatis.generator.api.IntrospectedColumn;
 import org.mybatis.generator.api.IntrospectedTable;

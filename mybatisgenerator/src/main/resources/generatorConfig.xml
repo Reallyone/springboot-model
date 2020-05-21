@@ -10,13 +10,14 @@
         <property name="endingDelimiter" value="`"/>
         <property name="javaFileEncoding" value="UTF-8"/>
         <!--1.覆盖新生成Mapper文件（覆盖上一次自动生成配置类的位置，我们包名肯定不一样！）-->
-        <plugin type="com.money.mybatisgenerator.mbg.OverIsMergeablePlugin"/>
+        <plugin type="com.hjx.mybatisgenerator.mbg.OverIsMergeablePlugin"/>
         <!-- 为模型生成序列化方法 （看你要不要！web前后端传递序列化还是搞一下把））-->
         <plugin type="org.mybatis.generator.plugins.SerializablePlugin"/>
         <!-- 为生成的Java模型创建一个toString方法（看你要不要！） -->
-        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+        <!--<plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>-->
+
         <!--2.使用CommentGenerator类，可以根据数据库注释生成注释（我们包名不一样！） -->
-        <commentGenerator type="com.money.mybatisgenerator.mbg.CommentGenerator">
+        <commentGenerator type="com.hjx.mybatisgenerator.mbg.CommentGenerator">
             <!-- 是否去除自动生成的注释 true：是 ： false:否 -->
             <property name="suppressAllComments" value="true"/>
             <property name="suppressDate" value="true"/>
@@ -29,22 +30,25 @@
             <property name="nullCatalogMeansCurrent" value="true"/>
         </jdbcConnection>
         <!--3.指定生成model的路径（我们包名不一样！）-->
-        <javaModelGenerator targetPackage="com.money.mybatisgenerator.mbg.model" targetProject="mybatisgenerator\src\main\java">
+        <javaModelGenerator targetPackage="com.hjx.mybatisgenerator.mbg.model" targetProject="mybatisgenerator\src\main\java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <!--4.指定生成mapper.xml的路径（我们包名不一样！）-->
-        <sqlMapGenerator targetPackage="com.money.mybatisgenerator.mbg.mapper" targetProject="mybatisgenerator\src\main\resources">
+        <sqlMapGenerator targetPackage="mapper" targetProject="mybatisgenerator\src\main\resources">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!--5.指定生成mapper接口的的路径（我们包名不一样！这里对应的算resources里的）-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.money.mybatisgenerator.mbg.mapper"
+        <javaClientGenerator type="XMLMAPPER" targetPackage="com.hjx.mybatisgenerator.mbg.mapper"
                              targetProject="mybatisgenerator\src\main\java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
+
         <!--6.如果不用example类，就使用这个<table>标签-->
-        <!--<table tableName="${jdbc.tableName}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"-->
-        <!--enableSelectByExample="false" selectByExampleQueryId="false" />-->
-        <table tableName="${jdbc.tableName}"/>
+        <table tableName="${jdbc.tableName}" enableCountByExample="false" enableUpdateByExample="false" enableDeleteByExample="false"
+        enableSelectByExample="false" selectByExampleQueryId="false" />
+
+
+        <!--<table tableName="${jdbc.tableName}"/>-->
     </context>
 </generatorConfiguration>

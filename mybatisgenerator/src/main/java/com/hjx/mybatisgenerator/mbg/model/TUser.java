@@ -1,4 +1,4 @@
-package com.money.mybatisgenerator.mbg.model;
+package com.hjx.mybatisgenerator.mbg.model;
 
 import io.swagger.annotations.ApiModelProperty;
 import java.io.Serializable;
@@ -166,32 +166,5 @@ public class TUser implements Serializable {
 
     public void setAddress(String address) {
         this.address = address == null ? null : address.trim();
-    }
-
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        sb.append(getClass().getSimpleName());
-        sb.append(" [");
-        sb.append("Hash = ").append(hashCode());
-        sb.append(", id=").append(id);
-        sb.append(", username=").append(username);
-        sb.append(", nickname=").append(nickname);
-        sb.append(", password=").append(password);
-        sb.append(", headImgUrl=").append(headImgUrl);
-        sb.append(", mobile=").append(mobile);
-        sb.append(", sex=").append(sex);
-        sb.append(", enabled=").append(enabled);
-        sb.append(", type=").append(type);
-        sb.append(", createTime=").append(createTime);
-        sb.append(", updateTime=").append(updateTime);
-        sb.append(", company=").append(company);
-        sb.append(", openId=").append(openId);
-        sb.append(", isDel=").append(isDel);
-        sb.append(", tenantId=").append(tenantId);
-        sb.append(", address=").append(address);
-        sb.append(", serialVersionUID=").append(serialVersionUID);
-        sb.append("]");
-        return sb.toString();
     }
 }

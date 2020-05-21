@@ -1,4 +1,4 @@
-package com.money.mybatisgenerator;
+package com.hjx.mybatisgenerator;
 
 import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
