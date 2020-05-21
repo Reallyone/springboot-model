@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
@@ -9,6 +10,8 @@
         <module name="SpringCloud_study" />
         <module name="eureka_center" />
         <module name="oauth_rbac" />
+        <module name="mybatisgenerator" />
+        <module name="oauth_rbac_redis" />
       </profile>
     </annotationProcessing>
   </component>
@@ -16,7 +19,9 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringCloud_study" options="-parameters" />
       <module name="eureka_center" options="-parameters" />
+      <module name="mybatisgenerator" options="-parameters" />
       <module name="oauth_rbac" options="-parameters" />
+      <module name="oauth_rbac_redis" options="-parameters" />
     </option>
   </component>
 </project>
