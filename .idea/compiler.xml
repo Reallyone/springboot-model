@@ -2,23 +2,32 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
-      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="SpringCloud_study" />
         <module name="eureka_center" />
         <module name="oauth_rbac" />
         <module name="mybatisgenerator" />
+        <module name="SpringCloud_study" />
+        <module name="my_gadget" />
         <module name="oauth_rbac_redis" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="eureka_center" target="1.8" />
+      <module name="my_gadget" target="1.8" />
+      <module name="mybatisgenerator" target="1.8" />
+      <module name="oauth_rbac" target="1.8" />
+      <module name="oauth_rbac_redis" target="1.8" />
+      <module name="SpringCloud_study" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="SpringCloud_study" options="-parameters" />
       <module name="eureka_center" options="-parameters" />
+      <module name="my_gadget" options="-parameters" />
       <module name="mybatisgenerator" options="-parameters" />
       <module name="oauth_rbac" options="-parameters" />
       <module name="oauth_rbac_redis" options="-parameters" />

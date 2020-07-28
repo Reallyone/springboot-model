@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-com.hjx.oauth_rbac_redis.commom.tenant.TenantAutoConfigure
+TenantAutoConfigure

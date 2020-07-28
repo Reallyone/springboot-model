@@ -25,6 +25,7 @@
         <module>oauth_rbac</module>
         <module>oauth_rbac_redis</module>
         <module>mybatisgenerator</module>
+        <module>my_gadget</module>
     </modules>
 
 
