@@ -1,0 +1,14 @@
+# Created by .ignore support plugin (hsz.mobi)
+### Example user template template
+### Example user template
+
+# IntelliJ project files
+.idea
+*.iml
+.mvn
+out
+gen
+log
+.gitignore
+my_gadget/src/main/java/com/hjx/system/List/
+oauth_rbac_redis/src/main/java/com/hjx/oauth_rbac_redis/
