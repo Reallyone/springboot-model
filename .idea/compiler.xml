@@ -6,18 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="eureka_center" />
+        <module name="netty_socket" />
         <module name="oauth_rbac" />
-        <module name="mybatisgenerator" />
-        <module name="SpringCloud_study" />
+        <module name="eureka_center" />
         <module name="my_gadget" />
         <module name="oauth_rbac_redis" />
+        <module name="mybatisgenerator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka_center" target="1.8" />
       <module name="my_gadget" target="1.8" />
       <module name="mybatisgenerator" target="1.8" />
+      <module name="netty_socket" target="1.8" />
       <module name="oauth_rbac" target="1.8" />
       <module name="oauth_rbac_redis" target="1.8" />
       <module name="SpringCloud_study" target="1.8" />
@@ -29,6 +30,7 @@
       <module name="eureka_center" options="-parameters" />
       <module name="my_gadget" options="-parameters" />
       <module name="mybatisgenerator" options="-parameters" />
+      <module name="netty_socket" options="-parameters" />
       <module name="oauth_rbac" options="-parameters" />
       <module name="oauth_rbac_redis" options="-parameters" />
     </option>

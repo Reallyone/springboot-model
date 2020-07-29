@@ -6,6 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/eureka_center/eureka_center.iml" filepath="$PROJECT_DIR$/eureka_center/eureka_center.iml" />
       <module fileurl="file://$PROJECT_DIR$/my_gadget/my_gadget.iml" filepath="$PROJECT_DIR$/my_gadget/my_gadget.iml" />
       <module fileurl="file://$PROJECT_DIR$/mybatisgenerator/mybatisgenerator.iml" filepath="$PROJECT_DIR$/mybatisgenerator/mybatisgenerator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/netty_socket/netty_socket.iml" filepath="$PROJECT_DIR$/netty_socket/netty_socket.iml" />
       <module fileurl="file://$PROJECT_DIR$/oauth_rbac/oauth_rbac.iml" filepath="$PROJECT_DIR$/oauth_rbac/oauth_rbac.iml" />
       <module fileurl="file://$PROJECT_DIR$/oauth_rbac_redis/oauth_rbac_redis.iml" filepath="$PROJECT_DIR$/oauth_rbac_redis/oauth_rbac_redis.iml" />
     </modules>
