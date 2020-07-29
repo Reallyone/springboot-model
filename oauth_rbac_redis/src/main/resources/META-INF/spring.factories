@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-TenantAutoConfigure
+com.hjx.commom.tenant.TenantAutoConfigure
