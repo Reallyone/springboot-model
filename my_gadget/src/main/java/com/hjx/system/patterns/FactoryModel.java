@@ -58,7 +58,7 @@ public class FactoryModel {
 
     }
 
-    //创建多个工厂模式
+    //创建静态工厂模式：在多个工厂模式的方法上修改成静态方法
     static class StaticSendFactor{
        static   SendMsg  sendEmailMsgProduce(){
             return new EmailSendMsg();
