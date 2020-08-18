@@ -2,11 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="832ea89d-0142-4d95-9d1e-00c2d7f70f3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my_gadget/src/main/java/com/hjx/system/patterns/AbstractFactoryModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_gadget/src/main/java/com/hjx/system/patterns/BuilderProductModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_gadget/src/main/java/com/hjx/system/patterns/SingletonModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_gadget/src/main/java/com/hjx/system/patterns/AdaptationModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_gadget/src/main/java/com/hjx/system/patterns/CountDownLatchDemo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_gadget/src/main/java/com/hjx/system/patterns/ObserverModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/my_gadget/src/main/java/com/hjx/system/patterns/StrategyModel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/my_gadget/src/main/java/com/hjx/system/patterns/FactoryModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/my_gadget/src/main/java/com/hjx/system/patterns/FactoryModel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,20 +86,7 @@
       <recent name="F:\A_git_hjx\springCloud_study\netty_socket\src\main\java\com\hjx" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BuilderProductModel">
-    <configuration name="AbstractFactoryModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hjx.system.patterns.AbstractFactoryModel" />
-      <module name="my_gadget" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hjx.system.patterns.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.CountDownLatchDemo">
     <configuration name="BuilderProductModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.hjx.system.patterns.BuilderProductModel" />
       <module name="my_gadget" />
@@ -113,8 +100,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FactoryModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hjx.system.patterns.FactoryModel" />
+    <configuration name="CountDownLatchDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hjx.system.patterns.CountDownLatchDemo" />
       <module name="my_gadget" />
       <extension name="coverage">
         <pattern>
@@ -126,12 +113,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListStudyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hjx.system.List.ListStudyTest" />
+    <configuration name="ObserverModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hjx.system.patterns.ObserverModel" />
       <module name="my_gadget" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hjx.system.List.*" />
+          <option name="PATTERN" value="com.hjx.system.patterns.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,12 +126,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hjx.system.test.MapTest" />
+    <configuration name="SingletonModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hjx.system.patterns.SingletonModel" />
       <module name="my_gadget" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hjx.system.test.*" />
+          <option name="PATTERN" value="com.hjx.system.patterns.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StrategyModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.hjx.system.patterns.StrategyModel" />
+      <module name="my_gadget" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.hjx.system.patterns.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -195,10 +195,6 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ListStudyTest" />
-      <item itemvalue="Application.MapTest" />
-      <item itemvalue="Application.FactoryModel" />
-      <item itemvalue="Application.AbstractFactoryModel" />
       <item itemvalue="Application.BuilderProductModel" />
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="Spring Boot.EurekaCenterApplication" />
@@ -206,14 +202,18 @@
       <item itemvalue="Spring Boot.NettySocketApplication" />
       <item itemvalue="Spring Boot.MyGadGetApplication" />
       <item itemvalue="Spring Boot.OauthRbacRedisApplication" />
+      <item itemvalue="Application.SingletonModel" />
+      <item itemvalue="Application.StrategyModel" />
+      <item itemvalue="Application.ObserverModel" />
+      <item itemvalue="Application.CountDownLatchDemo" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CountDownLatchDemo" />
+        <item itemvalue="Application.ObserverModel" />
+        <item itemvalue="Application.StrategyModel" />
+        <item itemvalue="Application.SingletonModel" />
         <item itemvalue="Application.BuilderProductModel" />
-        <item itemvalue="Application.AbstractFactoryModel" />
-        <item itemvalue="Application.FactoryModel" />
-        <item itemvalue="Application.MapTest" />
-        <item itemvalue="Application.ListStudyTest" />
       </list>
     </recent_temporary>
   </component>
@@ -240,6 +240,8 @@
       <workItem from="1597283162188" duration="8853000" />
       <workItem from="1597373614552" duration="10342000" />
       <workItem from="1597397713790" duration="2918000" />
+      <workItem from="1597627239456" duration="675000" />
+      <workItem from="1597631070483" duration="12312000" />
     </task>
     <task id="LOCAL-00001" summary="增加git 过滤文件">
       <created>1595931966130</created>
@@ -276,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1597375650884</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="设计模式编写">
+      <created>1597627280290</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1597627280290</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -324,65 +333,74 @@
     <MESSAGE value="增加 springboot + neettySocket整合+html测试" />
     <MESSAGE value="applicaiton配置文件" />
     <MESSAGE value="学习设计模式demo,map操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="学习设计模式demo,map操作" />
+    <MESSAGE value="设计模式编写" />
+    <option name="LAST_COMMIT_MESSAGE" value="设计模式编写" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1597395156854">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1597643793893">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597395156854" />
-    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1597375649123">
+    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597643793893" />
+    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1597627278448">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597375649123" />
+    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597627278448" />
     <state width="426" height="466" key="DebuggerActiveHint" timestamp="1597287658660">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="426" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1597287658660" />
-    <state width="1877" height="57" key="GridCell.Tab.0.bottom" timestamp="1597627046694">
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597627313927">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="57" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597627046694" />
-    <state width="1877" height="57" key="GridCell.Tab.0.center" timestamp="1597627046693">
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597627313927" />
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1597654915709">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="57" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597627046693" />
-    <state width="1877" height="57" key="GridCell.Tab.0.left" timestamp="1597627046693">
+    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597654915709" />
+    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1597654915709">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="57" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597627046693" />
-    <state width="1877" height="57" key="GridCell.Tab.0.right" timestamp="1597627046694">
+    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597654915709" />
+    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1597654915709">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="57" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597627046694" />
-    <state width="1877" height="119" key="GridCell.Tab.1.bottom" timestamp="1597368409138">
+    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597654915709" />
+    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1597654915709">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="119" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597368409138" />
-    <state width="1877" height="119" key="GridCell.Tab.1.center" timestamp="1597368409137">
+    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597654915709" />
+    <state width="1877" height="71" key="GridCell.Tab.1.bottom" timestamp="1597644753262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="119" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597368409137" />
-    <state width="1877" height="119" key="GridCell.Tab.1.left" timestamp="1597368409137">
+    <state width="1877" height="71" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597644753262" />
+    <state width="1877" height="71" key="GridCell.Tab.1.center" timestamp="1597644753262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="119" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597368409137" />
-    <state width="1877" height="119" key="GridCell.Tab.1.right" timestamp="1597368409138">
+    <state width="1877" height="71" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597644753262" />
+    <state width="1877" height="71" key="GridCell.Tab.1.left" timestamp="1597644753262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="119" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597368409138" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597375654822">
+    <state width="1877" height="71" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597644753262" />
+    <state width="1877" height="71" key="GridCell.Tab.1.right" timestamp="1597644753262">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597375654822" />
+    <state width="1877" height="71" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597644753262" />
+    <state x="725" y="230" key="RollbackChangesDialog" timestamp="1597631390087">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="725" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597631390087" />
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597627288322">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597627288322" />
     <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1597627240284">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597627240284" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597389552739">
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597632061774">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597389552739" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597632061774" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
