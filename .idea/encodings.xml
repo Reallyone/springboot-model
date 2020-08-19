@@ -3,10 +3,21 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/eureka_center" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka_center/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eureka_center/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/my_gadget" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/my_gadget/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/mybatisgenerator" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatisgenerator/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mybatisgenerator/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/netty_socket" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/netty_socket/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/netty_socket/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/oauth_rbac" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth_rbac/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth_rbac/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/oauth_rbac_redis" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth_rbac_redis/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth_rbac_redis/src/main/resources" charset="UTF-8" />
   </component>
 </project>
