@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="832ea89d-0142-4d95-9d1e-00c2d7f70f3a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/my_gadget/src/main/java/com/hjx/system/patterns/AdaptationModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_gadget/src/main/java/com/hjx/system/patterns/CountDownLatchDemo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_gadget/src/main/java/com/hjx/system/patterns/ObserverModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/my_gadget/src/main/java/com/hjx/system/patterns/StrategyModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="4328b68c-236c-4b54-b806-eedac91e16c7" name="Default Changelist" comment="定时任务写法">
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageViewManager">
+    <option name="myElementSize" value="201" />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -27,29 +26,42 @@
     <expand />
     <select />
   </component>
-  <component name="DefaultGradleProjectSettings">
-    <option name="isMigrated" value="true" />
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="MERGE" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\my_work\A2_My_Git\SpringCloud_study\.idea" />
+      </set>
+    </option>
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="E:\maven\repo" />
-        <option name="mavenHome" value="D:/Hjx_My_file/maven_home/apache-maven-3.6.0" />
-        <option name="userSettingsFile" value="D:\Hjx_My_file\maven_home\apache-maven-3.6.0\conf\settings-clj.xml" />
+        <option name="localRepository" value="D:\Maven-home\repository" />
+        <option name="mavenHome" value="D:/Maven-home/apache-maven-3.6.3" />
+        <option name="userSettingsFile" value="D:\Maven-home\apache-maven-3.6.3\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
   </component>
-  <component name="ProjectId" id="1ftz3cn6lQNkesPAkgsybnj0eq2" />
+  <component name="ProjectId" id="1c5JcxpmLzpyDvePKuXm8Cif14K" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -60,39 +72,55 @@
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
     <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="jdk.selected.JAVA_MODULE" value="1.8" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../springboot-foot-div/del/del" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
-    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15377855" />
-    <property name="project.structure.side.proportion" value="0.3416407" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
+  </component>
+  <component name="RebelAgentSelection">
+    <selection>jr</selection>
   </component>
   <component name="RecentsManager">
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.hjx" />
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.hjx.oauth_rbac_redis.system.model" />
+      <recent name="com.hjx.oauth_rbac_redis.commom.model" />
+      <recent name="com.hjx.oauth_rbac_redis.commom.util" />
+      <recent name="com.hjx.oauth_rbac_redis.commom.controller" />
+      <recent name="com.hjx.oauth_rbac_redis.commom.tenant" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\A_git_hjx\springCloud_study\netty_socket\src\main\resources" />
-      <recent name="F:\A_git_hjx\springCloud_study\netty_socket\src\main\java\com\hjx" />
+      <recent name="D:\my_work\A2_My_Git\SpringCloud_study\mybatisgenerator\src\main\resources" />
+      <recent name="D:\my_work\A2_My_Git\SpringCloud_study\mybatisgenerator\src\main\java\com\mybatis\mybatisgenerator" />
+      <recent name="D:\my_work\A2_My_Git\SpringCloud_study\oauth_rbac_redis\src\main\resources" />
+      <recent name="D:\my_work\A2_My_Git\SpringCloud_study\oauth_rbac_redis\src\main\java\com\hjx\oauth_rbac_redis\commom\tenant" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CountDownLatchDemo">
-    <configuration name="BuilderProductModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hjx.system.patterns.BuilderProductModel" />
-      <module name="my_gadget" />
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.MyTestApplication">
+    <configuration name="Generator " type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="com.hjx.mybatisgenerator.mbg.Generator" />
+      <module name="mybatisgenerator" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hjx.system.patterns.*" />
+          <option name="PATTERN" value="com.hjx.mybatisgenerator.mbg.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -100,12 +128,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountDownLatchDemo" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hjx.system.patterns.CountDownLatchDemo" />
-      <module name="my_gadget" />
+    <configuration name="ScheduleCron" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.my_test.cron.ScheduleCron" />
+      <module name="my_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hjx.system.patterns.*" />
+          <option name="PATTERN" value="com.example.my_test.cron.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -113,48 +141,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ObserverModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hjx.system.patterns.ObserverModel" />
-      <module name="my_gadget" />
+    <configuration name="TimerCron" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.my_test.cron.TimerCron" />
+      <module name="my_test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.hjx.system.patterns.*" />
+          <option name="PATTERN" value="com.example.my_test.cron.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SingletonModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hjx.system.patterns.SingletonModel" />
-      <module name="my_gadget" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hjx.system.patterns.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StrategyModel" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.hjx.system.patterns.StrategyModel" />
-      <module name="my_gadget" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.hjx.system.patterns.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="oauth_rbac" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hjx.Application" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -166,9 +161,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyGadGetApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="my_gadget" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hjx.MyGadGetApplication" />
+    <configuration name="MyTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="my_test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.my_test.MyTestApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -180,326 +175,242 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="NettySocketApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="netty_socket" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hjx.NettySocketApplication" />
+    <configuration name="OauthRbacRedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="oauth_rbac_redis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hjx.oauth_rbac_redis.OauthRbacRedisApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="OauthRbacRedisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="oauth_rbac_redis" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hjx.OauthRbacRedisApplication" />
+    <configuration name="oauth_center" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="oauth_rbac" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hjx.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="UPDATE_ACTION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.BuilderProductModel" />
-      <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="Application.Generator " />
+      <item itemvalue="Application.TimerCron" />
+      <item itemvalue="Application.ScheduleCron" />
+      <item itemvalue="Spring Boot.oauth_center" />
       <item itemvalue="Spring Boot.EurekaCenterApplication" />
-      <item itemvalue="Spring Boot.MybatisgeneratorApplication" />
-      <item itemvalue="Spring Boot.NettySocketApplication" />
-      <item itemvalue="Spring Boot.MyGadGetApplication" />
       <item itemvalue="Spring Boot.OauthRbacRedisApplication" />
-      <item itemvalue="Application.SingletonModel" />
-      <item itemvalue="Application.StrategyModel" />
-      <item itemvalue="Application.ObserverModel" />
-      <item itemvalue="Application.CountDownLatchDemo" />
+      <item itemvalue="Spring Boot.MybatisgeneratorApplication" />
+      <item itemvalue="Spring Boot.MyTestApplication" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.CountDownLatchDemo" />
-        <item itemvalue="Application.ObserverModel" />
-        <item itemvalue="Application.StrategyModel" />
-        <item itemvalue="Application.SingletonModel" />
-        <item itemvalue="Application.BuilderProductModel" />
+        <item itemvalue="Application.ScheduleCron" />
+        <item itemvalue="Application.TimerCron" />
+        <item itemvalue="Application.Generator " />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="Finished" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="832ea89d-0142-4d95-9d1e-00c2d7f70f3a" name="Default Changelist" comment="" />
-      <created>1595923162937</created>
+      <changelist id="4328b68c-236c-4b54-b806-eedac91e16c7" name="Default Changelist" comment="" />
+      <created>1589812603192</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1595923162937</updated>
-      <workItem from="1595923164827" duration="693000" />
-      <workItem from="1595923894445" duration="4518000" />
-      <workItem from="1595931739085" duration="11631000" />
-      <workItem from="1596003100304" duration="6946000" />
-      <workItem from="1596073783772" duration="19000" />
-      <workItem from="1596089421508" duration="709000" />
-      <workItem from="1596093917265" duration="1541000" />
-      <workItem from="1597051983172" duration="609000" />
-      <workItem from="1597129638322" duration="2494000" />
-      <workItem from="1597218206387" duration="5519000" />
-      <workItem from="1597283162188" duration="8853000" />
-      <workItem from="1597373614552" duration="10342000" />
-      <workItem from="1597397713790" duration="2918000" />
-      <workItem from="1597627239456" duration="675000" />
-      <workItem from="1597631070483" duration="12312000" />
+      <updated>1589812603192</updated>
+      <workItem from="1589812604638" duration="2713000" />
+      <workItem from="1589855778526" duration="5176000" />
+      <workItem from="1589863356476" duration="10166000" />
+      <workItem from="1589883669413" duration="3199000" />
+      <workItem from="1589955364339" duration="13021000" />
+      <workItem from="1590046272250" duration="13072000" />
+      <workItem from="1590121597429" duration="2306000" />
+      <workItem from="1590376101348" duration="757000" />
+      <workItem from="1590410032339" duration="3057000" />
+      <workItem from="1590469186776" duration="7842000" />
+      <workItem from="1590556511042" duration="885000" />
+      <workItem from="1590561758892" duration="376000" />
+      <workItem from="1590562150639" duration="153000" />
+      <workItem from="1590562314591" duration="1656000" />
+      <workItem from="1590658914245" duration="4535000" />
+      <workItem from="1590722194010" duration="582000" />
+      <workItem from="1593616753499" duration="420000" />
+      <workItem from="1597925567212" duration="4486000" />
+      <workItem from="1597931806800" duration="937000" />
+      <workItem from="1597978760621" duration="2678000" />
     </task>
-    <task id="LOCAL-00001" summary="增加git 过滤文件">
-      <created>1595931966130</created>
+    <task id="LOCAL-00001" summary="定时任务写法">
+      <created>1593619952977</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1595931966130</updated>
+      <updated>1593619952977</updated>
     </task>
-    <task id="LOCAL-00002" summary="增加 springboot + neettySocket整合">
-      <created>1596009641346</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1596009641347</updated>
-    </task>
-    <task id="LOCAL-00003" summary="增加 springboot + neettySocket整合+html测试">
-      <created>1596009743283</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1596009743283</updated>
-    </task>
-    <task id="LOCAL-00004" summary="applicaiton配置文件">
-      <created>1596009817167</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1596009817167</updated>
-    </task>
-    <task id="LOCAL-00005" summary="学习设计模式demo,map操作">
-      <created>1597375650884</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1597375650884</updated>
-    </task>
-    <task id="LOCAL-00006" summary="设计模式编写">
-      <created>1597627280290</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1597627280290</updated>
-    </task>
-    <option name="localTasksCounter" value="7" />
+    <option name="localTasksCounter" value="2" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="COLUMN_ORDER" />
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list />
-          </value>
-        </entry>
-        <entry key="User">
-          <value>
-            <list />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="增加git 过滤文件" />
-    <MESSAGE value="增加 springboot + neettySocket整合" />
-    <MESSAGE value="增加 springboot + neettySocket整合+html测试" />
-    <MESSAGE value="applicaiton配置文件" />
-    <MESSAGE value="学习设计模式demo,map操作" />
-    <MESSAGE value="设计模式编写" />
-    <option name="LAST_COMMIT_MESSAGE" value="设计模式编写" />
+    <MESSAGE value="定时任务写法" />
+    <option name="LAST_COMMIT_MESSAGE" value="定时任务写法" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser" timestamp="1597643793893">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="313" y="119" key="#Inspections" timestamp="1589883540121">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="765" y="229" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1597643793893" />
-    <state x="560" y="112" key="CommitChangelistDialog2" timestamp="1597627278448">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="313" y="119" key="#Inspections/0.0.1440.920@0.0.1440.920" timestamp="1589883540121" />
+    <state x="313" y="119" key="#Project_Structure" timestamp="1589813191018">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="560" y="112" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1597627278448" />
-    <state width="426" height="466" key="DebuggerActiveHint" timestamp="1597287658660">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="313" y="119" key="#Project_Structure/0.0.1440.920@0.0.1440.920" timestamp="1589813191018" />
+    <state x="176" y="116" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1590059680263">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="426" height="466" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1597287658660" />
-    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1597627313927">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="176" y="116" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.920@0.0.1440.920" timestamp="1590059680263" />
+    <state x="451" y="244" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1589813976158">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1597627313927" />
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom" timestamp="1597654915709">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="451" y="244" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1440.920@0.0.1440.920" timestamp="1589813976158" />
+    <state x="343" y="139" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1590050878578">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597654915709" />
-    <state width="1877" height="274" key="GridCell.Tab.0.center" timestamp="1597654915709">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="343" y="139" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1440.920@0.0.1440.920" timestamp="1590050878578" />
+    <state x="250" y="386" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1590052857091">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597654915709" />
-    <state width="1877" height="274" key="GridCell.Tab.0.left" timestamp="1597654915709">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="250" y="386" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1440.920@0.0.1440.920" timestamp="1590052857091" />
+    <state x="451" y="207" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590059264354">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597654915709" />
-    <state width="1877" height="274" key="GridCell.Tab.0.right" timestamp="1597654915709">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="451" y="207" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.920@0.0.1440.920" timestamp="1590059264354" />
+    <state x="311" y="54" key="CommitChangelistDialog2" timestamp="1597999955204">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1877" height="274" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597654915709" />
-    <state width="1877" height="71" key="GridCell.Tab.1.bottom" timestamp="1597644753262">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="311" y="54" key="CommitChangelistDialog2/0.0.1440.920@0.0.1440.920" timestamp="1597999955204" />
+    <state x="93" y="93" width="1255" height="735" key="DiffContextDialog" timestamp="1597999947994">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1877" height="71" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1597644753262" />
-    <state width="1877" height="71" key="GridCell.Tab.1.center" timestamp="1597644753262">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="93" y="93" width="1255" height="735" key="DiffContextDialog/0.0.1440.920@0.0.1440.920" timestamp="1597999947994" />
+    <state x="509" y="226" key="FileChooserDialogImpl" timestamp="1597931821836">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1877" height="71" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1597644753262" />
-    <state width="1877" height="71" key="GridCell.Tab.1.left" timestamp="1597644753262">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state x="509" y="226" key="FileChooserDialogImpl/0.0.1440.920@0.0.1440.920" timestamp="1597931821836" />
+    <state width="957" height="242" key="GridCell.Tab.0.bottom" timestamp="1590722776034">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1877" height="71" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1597644753262" />
-    <state width="1877" height="71" key="GridCell.Tab.1.right" timestamp="1597644753262">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="957" height="242" key="GridCell.Tab.0.bottom/0.0.1440.920@0.0.1440.920" timestamp="1590722776034" />
+    <state width="957" height="242" key="GridCell.Tab.0.center" timestamp="1590722776034">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state width="1877" height="71" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1597644753262" />
-    <state x="725" y="230" key="RollbackChangesDialog" timestamp="1597631390087">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="957" height="242" key="GridCell.Tab.0.center/0.0.1440.920@0.0.1440.920" timestamp="1590722776034" />
+    <state width="957" height="242" key="GridCell.Tab.0.left" timestamp="1590722776034">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="725" y="230" key="RollbackChangesDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597631390087" />
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2" timestamp="1597627288322">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="957" height="242" key="GridCell.Tab.0.left/0.0.1440.920@0.0.1440.920" timestamp="1590722776034" />
+    <state width="957" height="242" key="GridCell.Tab.0.right" timestamp="1590722776034">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="552" y="253" key="Vcs.Push.Dialog.v2/0.0.1920.1040@0.0.1920.1040" timestamp="1597627288322" />
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1597627240284">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="957" height="242" key="GridCell.Tab.0.right/0.0.1440.920@0.0.1440.920" timestamp="1590722776034" />
+    <state width="957" height="242" key="GridCell.Tab.1.bottom" timestamp="1590722776034">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="640" y="344" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1597627240284" />
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1597632061774">
-      <screen x="0" y="0" width="1920" height="1040" />
+    <state width="957" height="242" key="GridCell.Tab.1.bottom/0.0.1440.920@0.0.1440.920" timestamp="1590722776034" />
+    <state width="957" height="242" key="GridCell.Tab.1.center" timestamp="1590722776034">
+      <screen x="0" y="0" width="1440" height="920" />
     </state>
-    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1597632061774" />
+    <state width="957" height="242" key="GridCell.Tab.1.center/0.0.1440.920@0.0.1440.920" timestamp="1590722776034" />
+    <state width="957" height="242" key="GridCell.Tab.1.left" timestamp="1590722776034">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="957" height="242" key="GridCell.Tab.1.left/0.0.1440.920@0.0.1440.920" timestamp="1590722776034" />
+    <state width="957" height="242" key="GridCell.Tab.1.right" timestamp="1590722776034">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state width="957" height="242" key="GridCell.Tab.1.right/0.0.1440.920@0.0.1440.920" timestamp="1590722776034" />
+    <state x="251" y="116" key="Maven.ArtifactSearchDialog" timestamp="1589881352860">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="251" y="116" key="Maven.ArtifactSearchDialog/0.0.1440.920@0.0.1440.920" timestamp="1589881352860" />
+    <state x="388" y="193" key="NewModule_or_Project.wizard" timestamp="1589813621991">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="388" y="193" key="NewModule_or_Project.wizard/0.0.1440.920@0.0.1440.920" timestamp="1589813621991" />
+    <state x="459" y="171" key="RollbackChangesDialog" timestamp="1597999539566">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="459" y="171" key="RollbackChangesDialog/0.0.1440.920@0.0.1440.920" timestamp="1597999539566" />
+    <state x="321" y="138" key="SettingsEditor" timestamp="1598000041879">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="321" y="138" key="SettingsEditor/0.0.1440.920@0.0.1440.920" timestamp="1598000041879" />
+    <state x="460" y="164" key="VCS.ChangeListViewerDialog" timestamp="1598000261142">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="460" y="164" key="VCS.ChangeListViewerDialog/0.0.1440.920@0.0.1440.920" timestamp="1598000261142" />
+    <state x="313" y="194" key="Vcs.Push.Dialog.v2" timestamp="1598000202957">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="313" y="194" key="Vcs.Push.Dialog.v2/0.0.1440.920@0.0.1440.920" timestamp="1598000202957" />
+    <state x="405" y="285" key="com.intellij.ide.util.TipDialog" timestamp="1597978762903">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="405" y="285" key="com.intellij.ide.util.TipDialog/0.0.1440.920@0.0.1440.920" timestamp="1597978762903" />
+    <state x="517" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1598000252536">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="517" y="378" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1440.920@0.0.1440.920" timestamp="1598000252536" />
+    <state x="334" y="10" width="773" height="900" key="find.popup" timestamp="1590057789026">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="334" y="10" width="773" height="900" key="find.popup/0.0.1440.920@0.0.1440.920" timestamp="1590057789026" />
+    <state x="401" y="252" key="git4idea.merge.GitPullDialog" timestamp="1597999831757">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="401" y="252" key="git4idea.merge.GitPullDialog/0.0.1440.920@0.0.1440.920" timestamp="1597999831757" />
+    <state x="236" y="305" width="1025" height="304" key="git4idea.ui.GitUnstashDialog" timestamp="1598000162148">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="236" y="305" width="1025" height="304" key="git4idea.ui.GitUnstashDialog/0.0.1440.920@0.0.1440.920" timestamp="1598000162148" />
+    <state x="376" y="249" width="1006" height="597" key="new project wizard" timestamp="1590659440061">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="376" y="249" width="1006" height="597" key="new project wizard/0.0.1440.920@0.0.1440.920" timestamp="1590659440061" />
+    <state x="383" y="195" width="672" height="678" key="search.everywhere.popup" timestamp="1590660677589">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="383" y="195" width="672" height="678" key="search.everywhere.popup/0.0.1440.920@0.0.1440.920" timestamp="1590660677589" />
+    <state x="557" y="181" key="spring file set editor" timestamp="1590051412686">
+      <screen x="0" y="0" width="1440" height="920" />
+    </state>
+    <state x="557" y="181" key="spring file set editor/0.0.1440.920@0.0.1440.920" timestamp="1590051412686" />
   </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>my_gadget</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.3416407" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectJDKs.UI">
-        <settings>
-          <last-edited>1.8</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.3759086" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/SpringCloud_study$MyTestApplication.ic" NAME="MyTestApplication Coverage Results" MODIFIED="1590722620580" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
