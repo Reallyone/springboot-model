@@ -3,7 +3,7 @@
 ### Example user template
 
 # IntelliJ project files
-.idea
+.idea# 
 *.iml
 .mvn
 out
@@ -12,3 +12,4 @@ log
 .gitignore
 my_gadget/src/main/java/com/hjx/system/List/
 oauth_rbac_redis/src/main/java/com/hjx/oauth_rbac_redis/
+.idea/
