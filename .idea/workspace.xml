@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4328b68c-236c-4b54-b806-eedac91e16c7" name="Default Changelist" comment="定时任务写法">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="4328b68c-236c-4b54-b806-eedac91e16c7" name="Default Changelist" comment="定时任务写法" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -161,6 +159,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyGadGetApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="my_gadget" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hjx.MyGadGetApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="MyTestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="my_test" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.my_test.MyTestApplication" />
@@ -171,6 +176,13 @@
     <configuration name="MybatisgeneratorApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="mybatisgenerator" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.hjx.mybatisgenerator.MybatisgeneratorApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OauthRbacRedisApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="oauth_rbac_redis" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.hjx.OauthRbacRedisApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -201,6 +213,8 @@
       <item itemvalue="Spring Boot.OauthRbacRedisApplication" />
       <item itemvalue="Spring Boot.MybatisgeneratorApplication" />
       <item itemvalue="Spring Boot.MyTestApplication" />
+      <item itemvalue="Spring Boot.OauthRbacRedisApplication (1)" />
+      <item itemvalue="Spring Boot.MyGadGetApplication" />
     </list>
     <recent_temporary>
       <list>
@@ -261,7 +275,7 @@
       <workItem from="1593616753499" duration="420000" />
       <workItem from="1597925567212" duration="4486000" />
       <workItem from="1597931806800" duration="937000" />
-      <workItem from="1597978760621" duration="2678000" />
+      <workItem from="1597978760621" duration="2990000" />
     </task>
     <task id="LOCAL-00001" summary="定时任务写法">
       <created>1593619952977</created>

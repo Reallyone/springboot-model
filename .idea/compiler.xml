@@ -2,21 +2,24 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="netty_socket" />
-        <module name="oauth_rbac" />
         <module name="eureka_center" />
+        <module name="oauth_rbac" />
+        <module name="my_test" />
+        <module name="mybatisgenerator" />
         <module name="my_gadget" />
         <module name="oauth_rbac_redis" />
-        <module name="mybatisgenerator" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="eureka_center" target="1.8" />
       <module name="my_gadget" target="1.8" />
+      <module name="my_test" target="1.8" />
       <module name="mybatisgenerator" target="1.8" />
       <module name="netty_socket" target="1.8" />
       <module name="oauth_rbac" target="1.8" />
@@ -26,9 +29,10 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="SpringCloud_study" options="-parameters" />
+      <module name="SpringCloud_study" options="" />
       <module name="eureka_center" options="-parameters" />
       <module name="my_gadget" options="-parameters" />
+      <module name="my_test" options="-parameters" />
       <module name="mybatisgenerator" options="-parameters" />
       <module name="netty_socket" options="-parameters" />
       <module name="oauth_rbac" options="-parameters" />
