@@ -1,2 +1,14 @@
 server:
-  port: 8082
+  port: 18082
+
+
+#eureka
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 10
+    health-check-url-path: /actuator/health
+    prefer-ip-address: true
+  client:
+    registry-fetch-interval-seconds: 5
+    service-url:
+      defaultZone: http://127.0.0.1:8080/eureka/
