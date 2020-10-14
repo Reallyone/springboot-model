@@ -1,0 +1,35 @@
+server:
+  port: 9601
+  servlet:
+    context-path: /hjx-generator
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    #MySQL≈‰÷√
+    driverClassName: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.01:3306/spring?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: root
+    password: root
+
+  #shop_wallet
+  #    url: jdbc:mysql://47.92.82.62:3306/shop_wallet?allowMultiQueries=true&useUnicode=true&characterEncoding=UTF-8&useSSL=false
+  #    username: root
+  #    password: qingjian!@#
+
+  jackson:
+    time-zone: GMT+8
+    date-format: yyyy-MM-dd HH:mm:ss
+  resources:
+    static-locations: classpath:/static/,classpath:/views/
+
+mybatis:
+  mapperLocations: classpath:mapper/*.xml
+
+pagehelper:
+  reasonable: true
+  supportMethodsArguments: true
+  params: count=countSql
+
+ccd:
+  database: mysql
